@@ -16,7 +16,7 @@
     - name: install java
       apt:
         name: openjdk-11-jre
-        state: present   
+        state: present
 
     - name: Install Jenkins
       apt:
