@@ -8,10 +8,17 @@
         url: https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key
         state: present
 
+<<<<<<< HEAD
     - name: Add Jenkins APT repository
       apt_repository:
         repo: deb http://pkg.jenkins.io/debian-stable binary/
         state: present
+=======
+- name: add jenkins repo
+  apt_repository:
+    repo: deb 'https://pkg.jenkins.io/debian-stable binary/'
+    state: present
+>>>>>>> 26d42672523608418727b7e262756fc431ae2ff2
 
     - name: install java
       apt:
